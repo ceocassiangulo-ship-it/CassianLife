@@ -1,5 +1,53 @@
 /* Base (mobile first) */
-
+@media (max-width: 480px) {
+  header{
+    width: 100%;
+  }
+  .image-text{
+    overflow: hidden;
+    flex-direction: column;
+    .images{
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+  .product-feature-section{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center ;
+  }
+  .product-feature-section .images{
+    margin: 0;
+  }
+  .product-feature-section .text{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .feature{
+      flex-direction: column;
+      align-items: center;
+      .icone-box{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .prova-social{
+    text-align: center;
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      .feedbacke{
+        margin: 10px 0px;
+        scale: .5;
+        box-shadow: var(--shadow1);
+      }
+    }
+  }
+}
 /* ===== Tablets ===== */
 @media (max-width: 768px) {
   section{
@@ -26,29 +74,29 @@
   .hero-section{
     width: 100%;
   }
+  .features-section{
+    padding: 20px 0px;
+    margin: 0;
+  }
   .image-text{
     flex-direction: column;
     height: fit-content;
     .images{
       margin: 0;
-      flex-direction: column-reverse;
+      flex-direction:row;
       align-items: center;
       margin: 0;
       .smalls{
         margin: 0;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
           justify-content: space-between;
-          height: max-content;
+          height: min-content;
           align-items: center;
-          .img-box{
-          }
         }
         .big{
           margin: 0;
-          width: 300px;
-          overflow: hidden;
-          background-color: red;
+          width: 500px;
           .img-box{
             img{
 
