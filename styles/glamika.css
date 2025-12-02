@@ -109,7 +109,6 @@ header .redes-sociais{
 }
 .image-text .images .smalls{
     height: 500px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +134,6 @@ header .redes-sociais{
             height: 500px;
             overflow: hidden;
             border: 1px solid var(--light-brown);
-
             img{
                 width: 100%;
             }
