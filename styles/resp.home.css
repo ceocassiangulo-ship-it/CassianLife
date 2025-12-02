@@ -15,9 +15,22 @@
     flex-direction: column;
     justify-content: space-between;
     align-items:center ;
+    margin: 0;
+    background-color: GOLD;
+    width: 100%;
+    padding: 10px 0px;
   }
   .product-feature-section .images{
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    .big-image{
+      margin: 0;
+      
+    }
+    .small-image{
+      display: none;
+    }
   }
   .product-feature-section .text{
     padding-top: 20px;
