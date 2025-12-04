@@ -101,12 +101,12 @@ header .redes-sociais{
     align-items: center;
     padding: 20px;
 }
-.image-text .images{
+.image-text .imaging{
     height: 100%;
     display: flex;
     align-items: flex-start;
 }
-.image-text .images .smalls{
+.image-text .imaging .smalls{
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ header .redes-sociais{
             }
     }
 }
-.image-text .images .big{
+.image-text .imaging .big{
         .img-box{
             width: 470px;
             height: 500px;
