@@ -19,6 +19,9 @@
         background-color: red;
       }
     }
+    .resp-menu{
+      display: flex;
+    }
   }
   .image-text{
     flex-direction: column;
