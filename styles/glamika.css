@@ -30,27 +30,137 @@ header .logo{
     font-size: 20px;
 }
 header .redes-sociais{
+  width: max-content;
+  border: 1px solid white;
   a{
     text-decoration: none;
+    color:#010101;
 
   }
   i{
-    color: var(--bg);
+    color: var(--dark-brown);
     margin: 0px 5px;
     font-size: 18px;
   }
 }
 .hero-section{
-    background-color: red;
-    height: 70vh;
+    background-color: #cfa169;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    img{
-        width: 100%;
-    }
 }
+.hero-section .slider{
+  margin: 0 auto;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+}
+.hero-section .slider .slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.hero-section .slides input{
+  display: none;
+}
+.hero-section .slides .slide{
+  width: 25%;
+  position: relative;
+  transition: .6s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden ;
+  .text{
+    position: absolute;
+    bottom: 40px;
+    padding: 40px;
+    color: white;
+
+    h3{
+      font-size: 32px;
+    }
+    h4{
+      font-size: 24px;
+    }
+    p{
+      font-family: var(--sans-serif2);
+      width: 50%;
+      margin: 10px 0px 20px 0px;
+    }
+    a{
+      margin-top: 20px;
+      padding: 10px;
+      background-color: aliceblue;
+      text-decoration:none;
+      color: black;
+    }
+  }
+}
+.hero-section .slider .slides .slide img{
+  width: 100%;
+  height: 100%;
+}
+.manual-nav{
+  position: absolute;
+  width: 100vw;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+ border: 2px solid white;
+ padding: 5px;
+ border-radius: 50%;
+ cursor:pointer;
+ transition: .7s;
+ margin: 0px 10px;
+}
+.manual-btn:hover{
+  background-color: white;
+}
+#r1:checked ~ .first{
+  margin-left: 0%;
+}
+#r2:checked ~ .first{
+  margin-left: -25%;
+}
+#r3:checked ~ .first{
+  margin-left: -50%;
+}
+#r4:checked ~ .first{
+  margin-left: -75%;
+}
+.auto-nav{
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.auto-nav .auto-btn{
+ border: 2px solid white;
+ padding: 5px;
+ border-radius: 50%;
+ cursor:pointer;
+ transition: .7s;
+ margin: 0px 10px;
+}
+#r1:checked ~ .auto-nav .auto-btn{
+  background-color: red;
+}
+#r2:checked ~ .auto-nav .auto-btn{
+  background-color: red;
+}
+#r3:checked ~ .auto-nav .auto-btn{
+  background-color: red;
+}
+#r4:checked ~ .auto-nav .auto-btn{
+  background-color: red;
+}
+
 .features-section{
     display: flex;
     justify-content: center;
@@ -100,6 +210,7 @@ header .redes-sociais{
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    display: none;
 }
 .image-text .imaging{
     height: 100%;
@@ -124,6 +235,7 @@ header .redes-sociais{
         align-items: center;
         img{
                 width: 100%;
+                height: 100%;
             }
     }
 }
@@ -191,6 +303,9 @@ header .redes-sociais{
         padding: 10px 30px;
         background-color: white;
     }
+    img{
+      width: 150%;
+    }
 }
 .views-section .view:hover > img{
     scale: 1.1;
@@ -207,7 +322,7 @@ header .redes-sociais{
     background-color: #F0E7D8;
     background-image: url(/images/parallax-banner-1.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     h3{
         font-size: 14px;
         margin-bottom: 30px;
@@ -227,7 +342,8 @@ header .redes-sociais{
         padding: 20px;
     }
     a:hover{
-        scale: 1.1    }
+        scale: 1.1
+    }
 }
 .offer-section{
     width: 100%;
@@ -259,6 +375,10 @@ header .redes-sociais{
         width: 500px;
         margin-right: 50px;
         position: relative;
+        video{
+          width: 100%;
+          
+        }
     }
     .text{
         width: 50%;
@@ -267,25 +387,17 @@ header .redes-sociais{
 .product-feature-section .images{
     .big-image{
         overflow: hidden;
-        width: 400px;
-        height: 400px;
-        img{
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        video{
+          border-radius: 15px;
+          
             width: 100%;
         }
     }
-    .small-image{
-        overflow: hidden;
-        width: 200px;
-        height: 300px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        img{
-            width: 100%;
-            overflow: hidden;
-        }
-    }  
 }
 .product-feature-section .text{
     h3{
@@ -397,6 +509,37 @@ header .redes-sociais{
 .prova-social .container:has(.feedbacke:hover) 
   .feedbacke:not(:hover) {
     scale: .9;
+}
+.faq{
+  padding: 0;
+  width: 90%;
+  h3{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+}
+.faq .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .question{
+    width: 50%;
+    background-color: #E8E8E0;
+    margin: 20px 10px;
+    padding: 10px;
+
+    border-radius: 12px;
+    border-left: 10px solid var(--dark-brown);
+    h5{
+      font-size: 18px;
+    }
+    span{
+      font-size: 12px;
+      font-family: var(--sans-serif2);
+    }
+  }
 }
 .aumara-footer{
   background:#F7F7F7;
