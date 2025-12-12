@@ -1,12 +1,17 @@
 /* Base (mobile first) */
 @media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+  }
   header{
     width: 100%;
   }
   header{
     .navbar{
+      z-index: 10;
       position: absolute;
       top: 75px;
+      scale: 1;
       right: 0;
       background-color: white;
       padding: 20px 0px;
@@ -15,13 +20,20 @@
       li{
         padding: 20px;
       }
-      li::selection{
-        background-color: red;
+      li:active{
+        background-color: var(--light-brown);
+        a{
+          color:white;
+        }
       }
+    }
+    .navbar.hide{
+      opacity: 0;
     }
     .resp-menu{
       display: flex;
     }
+    
   }
   .image-text{
     flex-direction: column;

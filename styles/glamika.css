@@ -9,7 +9,7 @@ header .container{
     justify-content: space-between;
 
     .resp-menu{
-      display: none;
+      display: flex;
     }
 }
 header .container .navbar{
@@ -424,7 +424,7 @@ header .redes-sociais{
     }
     .legenda{
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-family: var(--sans-serif2);
     }
     .feature{
@@ -455,6 +455,13 @@ header .redes-sociais{
                 font-size: 14px;
             }
         }
+    }
+    a{
+      margin-top: 10px;
+      padding: 10px;
+      color: white;
+      background-color: var(--dark-brown);
+      text-decoration: none;
     }
 }
 
