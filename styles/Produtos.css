@@ -4,3 +4,6 @@
     align-items: center;
 
 }
+.image-text{
+    display: flex;
+}
