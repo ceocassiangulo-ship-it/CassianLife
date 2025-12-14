@@ -6,7 +6,7 @@
   header{
     width: 100%;
   }
-  header{
+  header .container{
     .navbar{
       z-index: 10;
       position: absolute;
@@ -32,6 +32,19 @@
     }
     .resp-menu{
       display: flex;
+      width: 40px;
+      height: 35px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 7px;
+
+    }
+    .resp-menu .line{
+        width: 25px;
+        height: 2px;
+        margin: 3px 0px;
+        background-color:var(--dark-brown);
     }
     
   }

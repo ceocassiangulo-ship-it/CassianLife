@@ -7,10 +7,12 @@ header .container{
     display: flex;
     padding: 0px 10px;
     justify-content: space-between;
-
-    .resp-menu{
-      display: flex;
+    .bloco{
+      display: none;
     }
+  .resp-menu{
+    display: none;
+  }
 }
 header .container .navbar{
     display: flex;
